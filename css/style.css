@@ -1,0 +1,193 @@
+@import url("./vars.css");
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+}
+
+html,
+body {
+   min-height: 100vh;
+   color: var(--font-color-main);
+   font-family: var(--font-family-main);
+}
+
+header {
+   position: fixed;
+   display: block;
+   width: 100%;
+}
+
+main {
+   padding-top: 80px;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.container-header {
+   margin: 13px auto;
+}
+
+.left-side {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-grow: 1;
+   max-width: 385px;
+   gap: 50px;
+}
+
+.right-side {
+   flex-grow: 2;
+   text-align: right;
+}
+
+.use {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 261px;
+   gap: 26px;
+}
+
+.use__item {
+   position: relative;
+}
+
+.leng__ua {
+   display: none;
+}
+
+.leng__text {
+   font-family: "Tourney";
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 0.8;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.use__item:first-child::after {
+   content: "/";
+   position: absolute;
+   right: -15px;
+   font-family: "Staatliches";
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 1.3;
+   letter-spacing: 0.03em;
+   color: #000000;
+}
+
+.use__link {
+   font-family: "Staatliches";
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 1.3;
+   letter-spacing: 0.03em;
+   color: var(--font-color-main);
+}
+
+.container-main {
+   margin-top: 70px;
+   gap: 30px;
+}
+
+.sidebar {
+   flex-grow: 1;
+   max-width: 385px;
+}
+
+.bcg__img {
+   width: 45%;
+   position: fixed;
+   z-index: -1;
+   right: 0;
+}
+
+.content {
+   /* height: 110vh; */
+   flex-grow: 2;
+   max-width: 785px;
+   margin-bottom: 90px;
+}
+
+.title {
+   font-family: "Francois One";
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 1.33;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: var(--font-color-main);
+}
+
+.menu__item {
+   margin-bottom: 70px;
+}
+
+.menu__item:last-child {
+   margin-bottom: 0;
+}
+
+.menu__link {
+   color: var(--font-color-main);
+   padding: 0px 0px 10px;
+   border-bottom: 1px solid #bdbdbd;
+}
+
+.chapter__title {
+   position: relative;
+   padding-top: 1px;
+   display: inline-block;
+   margin-bottom: 40px;
+}
+
+.chapter {
+   position: relative;
+   margin-bottom: 70px;
+}
+
+.chapter:last-child {
+   margin-bottom: 0;
+}
+
+.chapter::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: block;
+   width: 100px;
+   height: 8px;
+   background-color: var(--font-color-main);
+}
+
+.chapter__number {
+   position: absolute;
+   top: 0;
+   right: -112px;
+   font-family: "Farro";
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 1;
+   color: var(--font-color-main);
+}
+
+.chapter__text {
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 1.7;
+   color: var(--font-color-main);
+   max-width: 785px;
+}
+
+.bcg-green {
+   background: #dadada;
+}
