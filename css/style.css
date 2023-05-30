@@ -12,10 +12,11 @@ body {
    font-family: var(--font-family-main);
 }
 
-header {
+.header {
    position: fixed;
    display: block;
    width: 100%;
+   z-index: 2;
 }
 
 main {
@@ -102,6 +103,10 @@ main {
 .sidebar {
    flex-grow: 1;
    max-width: 385px;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 17%;
+   height: 20%;
 }
 
 .bcg__img {
